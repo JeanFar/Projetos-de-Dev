@@ -1,0 +1,131 @@
+body {
+    background-color: black;
+}
+a {
+    text-decoration: none; /* Remova o sublinhado */
+    color: rgb(194, 191, 191);
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    font-size: large;
+}
+.background-container {
+    background-image: url("background.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.recursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+
+}
+.carteira {
+    color: black;
+}
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.descricao {
+    font-size: 10px; /* Define o tamanho da fonte do parágrafo */
+    justify-content:right;
+    width: 125px; /* Defina a largura desejada para a div */
+}
+bold {
+    color: red;
+}
+.promocional {
+    font-size: 25px;
+    justify-content: left;
+    width: 280px;
+    font-family:'Courier New', Courier, monospace;
+}
+.imagensgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Quatro colunas de igual largura */
+    grid-template-rows: auto auto; /* Duas linhas de altura automática */
+    gap: 10px; /* Espaçamento entre as células */
+    max-width: 1300px; /* Defina uma largura máxima para a grade */
+    margin: 0 auto; /* Centralize a grade horizontalmente */
+}
+
+.grid-item {
+    padding: 15px;
+    text-align: center;
+}
+
+.grid-item-img {
+    max-width: 100%;
+    height: auto;
+}
+/* main */
+main {
+    color: white;
+    font-size: large;
+    border-bottom: 2px solid white;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 0.7fr auto;
+    grid-gap: 10px;
+    width: 100%;
+    color: white;
+}
+
+.item {
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.link a {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+/* Redimensionar a imagem */
+.item-banner img {
+    max-width: 70%;
+    height: auto;
+}
+
+/* article */
+article {
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.gridarticle {
+    display: grid;
+    grid-template-columns: auto 1px auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+}
+
+.itemart {
+    padding: 20px;
+    border-left: 1px solid white;
+}
+
+.separator {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background-color: #000;
+    width: 1px;
+}
+
+
+
